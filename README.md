@@ -93,7 +93,7 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 [git pull](#action-git-pull) - Pull the repo  
 [delete repo](#action-delete-repo) - Delete a cloned repository  
 [clone repo](#action-clone-repo) - Clone the repo  
-[on poll](#on-poll) - Ingest updates to a repo
+[on poll](#on-poll) - Ingest updates to a repo  
 
 ## action: 'test connectivity'
 Validate credentials provided for connectivity
