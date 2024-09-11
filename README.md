@@ -93,6 +93,7 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 [git pull](#action-git-pull) - Pull the repo  
 [delete repo](#action-delete-repo) - Delete a cloned repository  
 [clone repo](#action-clone-repo) - Clone the repo  
+[on poll](#on-poll) - Ingest updates to a repo  
 
 ## action: 'test connectivity'
 Validate credentials provided for connectivity
@@ -381,3 +382,20 @@ action_result.summary | string |  |
 action_result.message | string |  |   Repo test_repo cloned successfully 
 summary.total_objects | numeric |  |   1 
 summary.total_objects_successful | numeric |  |   1 
+
+## action: 'on poll'
+Ingest updates to a repo
+
+Type: **ingest**  
+Read only: **False**
+
+This action will monitor for and pull updates from a repo and branch configured in an asset configuration
+
+#### Action Parameters
+PARAMETER | REQUIRED | DESCRIPTION | TYPE | CONTAINS
+--------- | -------- | ----------- | ---- | --------
+**repo_url** |  optional  | Repository URL | string |  `github repo` 
+**branch** |  optional  | Branch | string |  `github branch` 
+
+#### Action Output
+No Output
